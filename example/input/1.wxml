@@ -1,0 +1,44 @@
+<view wx:if="{{isShow}}">
+</view>
+<view wx:elif="{{isShow}}">
+</view>
+<view wx:else>
+</view>
+
+<myInput
+  model:value="{{inputValue}}"
+  bindchange1="bindchange1"
+  bind:change2="bindchange2"
+  catchchange1="catchchange1"
+  catch:change2="catchchange2"
+/>
+
+<view capture-bind:tap="captureBindTap" capture-catch:tap="captureCatchTap">capture</view>
+
+<view wx:for="{{list}}" wx:key="id">
+  <view
+    wx:for="{{item.children}}"
+    wx:key="*this"
+    wx:for-item="ele"
+    wx:for-index="eleIndex"
+  >
+    {{eleIndex}}:{{ele}}
+  </view>
+
+</view>
+
+<view class='{{dataInfo.status == 2?"mulBtns":""}}'>
+</view>
+
+<view class="{{dataInfo.status == 2?'mulBtns':''}}">
+</view>
+
+<view
+  class='orderDetail hasFixedFooter {{dataInfo.status == 2?"mulBtns":""}}'
+  style="font-size:16px;color:{{color}};"
+  data-flag="flag"
+>content
+</view>
+
+<button class="{{type}} {{disabled?'disabled':''}}">{{btnText}}</button>
+

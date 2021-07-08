@@ -1,0 +1,41 @@
+{
+  "name": "wxml-to-uni",
+  "version": "0.0.1",
+  "description": "微信小程序wxml模板转uni-app模板",
+  "main": "lib/index.js",
+  "keywords": [
+    "wxml",
+    "微信小程序",
+    "miniprogram",
+    "uni-app",
+    "模板"
+  ],
+  "scripts": {
+    "clean": "gulp clean",
+    "dev": "gulp dev",
+    "watch": "gulp watch",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.da156.cn:h5/wxml-to-uni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhongjiajian/dym-ui/issues"
+  },
+  "homepage": "",
+  "author": "zhongjiajian",
+  "license": "ISC",
+  "dependencies": {
+    "himalaya": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

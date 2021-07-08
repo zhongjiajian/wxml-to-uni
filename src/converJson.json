@@ -1,0 +1,253 @@
+[
+  {
+    "type": "element",
+    "tagName": "view",
+    "attributes": [
+      {
+        "key": "v-if",
+        "value": "isShow"
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "\n"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n"
+  },
+  {
+    "type": "element",
+    "tagName": "view",
+    "attributes": [
+      {
+        "key": "v-else-if",
+        "value": "isShow"
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "\n"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n"
+  },
+  {
+    "type": "element",
+    "tagName": "view",
+    "attributes": [
+      {
+        "key": "wx:else",
+        "value": null
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "\n"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n\n"
+  },
+  {
+    "type": "element",
+    "tagName": "myinput",
+    "attributes": [
+      {
+        "key": ":value.sync",
+        "value": "inputValue"
+      },
+      {
+        "key": "@change1",
+        "value": "bindchange1"
+      },
+      {
+        "key": "@change2",
+        "value": "bindchange2"
+      },
+      {
+        "key": "catchchange1",
+        "value": "catchchange1"
+      },
+      {
+        "key": "catch:change2",
+        "value": "catchchange2"
+      }
+    ],
+    "children": []
+  },
+  {
+    "type": "text",
+    "content": "\n\n"
+  },
+  {
+    "type": "element",
+    "tagName": "view",
+    "attributes": [
+      {
+        "key": "@tap.captrue",
+        "value": "captureBindTap"
+      },
+      {
+        "key": "@tap.captrue.stop",
+        "value": "captureCatchTap"
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "capture"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n\n"
+  },
+  {
+    "type": "element",
+    "tagName": "view",
+    "attributes": [
+      {
+        "key": "v-for",
+        "value": "(item,index) in list"
+      },
+      {
+        "key": ":key",
+        "value": "item.id"
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "\n  "
+      },
+      {
+        "type": "element",
+        "tagName": "view",
+        "attributes": [
+          {
+            "key": "v-for",
+            "value": "(ele,eleIndex) in item.children"
+          },
+          {
+            "key": ":key",
+            "value": "ele"
+          }
+        ],
+        "children": [
+          {
+            "type": "text",
+            "content": "\n    {{eleIndex}}:{{ele}}\n  "
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "\n\n"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n\n"
+  },
+  {
+    "type": "element",
+    "tagName": "view",
+    "attributes": [
+      {
+        "key": ":class",
+        "value": "dataInfo.status == 2?\"mulBtns\":\"\""
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "\n"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n\n"
+  },
+  {
+    "type": "element",
+    "tagName": "view",
+    "attributes": [
+      {
+        "key": ":class",
+        "value": "dataInfo.status == 2?'mulBtns':''"
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "\n"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n\n"
+  },
+  {
+    "type": "element",
+    "tagName": "view",
+    "attributes": [
+      {
+        "key": ":class",
+        "value": "\"orderDetail hasFixedFooter \" + (dataInfo.status == 2?\"mulBtns\":\"\")"
+      },
+      {
+        "key": ":style",
+        "value": "\"font-size:16px;color:\" + (color) + \";\""
+      },
+      {
+        "key": "data-flag",
+        "value": "flag"
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "content\n"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n\n"
+  },
+  {
+    "type": "element",
+    "tagName": "button",
+    "attributes": [
+      {
+        "key": ":class",
+        "value": "(type) + \" \" + (disabled?\"disabled\":\"\")"
+      }
+    ],
+    "children": [
+      {
+        "type": "text",
+        "content": "{{btnText}}"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\n\n"
+  }
+]
