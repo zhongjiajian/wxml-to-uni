@@ -1,6 +1,6 @@
 {
   "name": "wxml-to-uni",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "微信小程序wxml模板转uni-app模板",
   "main": "lib/index.js",
   "keywords": [
@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.da156.cn:h5/wxml-to-uni.git"
+    "url": "git+https://github.com/zhongjiajian/wxml-to-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/zhongjiajian/dym-ui/issues"
+    "url": "https://github.com/zhongjiajian/wxml-to-ui/issues"
   },
   "homepage": "",
   "author": "zhongjiajian",
