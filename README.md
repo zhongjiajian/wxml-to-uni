@@ -76,11 +76,11 @@ fs.writeFile(outputPath, uniml, err => {
 <view wx:else>
 </view>
 
-<myinput
-  :value.sync='inputValue'
-  @change1='bindchange1'
-  @change2='bindchange2'
-  catchchange1='catchchange1'
+<myinput 
+  :value.sync='inputValue' 
+  @change1='bindchange1' 
+  @change2='bindchange2' 
+  catchchange1='catchchange1' 
   catch:change2='catchchange2'
 ></myinput>
 
@@ -96,13 +96,12 @@ fs.writeFile(outputPath, uniml, err => {
 
 <view :class="dataInfo.status == 2?'mulBtns':''"></view>
 
-<view
-  :class='"orderDetail hasFixedFooter " + (dataInfo.status == 2?"mulBtns":"")'
-  :style='"font-size:16px;color:" + (color) + ";"'
+<view 
+  :class="'orderDetail hasFixedFooter ' + (dataInfo.status == 2?'mulBtns':'')" 
+  :style="'font-size:16px;color:' + (color) + ';'" 
   data-flag='flag'
->content
-</view>
+>content</view>
 
-<button :class='(type) + " " + (disabled?"disabled":"")'>{{btnText}}</button>
+<button :class="(type) + ' ' + (disabled?'disabled':'')">{{btnText}}</button>
 
 ```

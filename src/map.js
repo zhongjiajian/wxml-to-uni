@@ -1,4 +1,4 @@
-// type element attributes 
+// type element attributes
 
 
 // type text content
@@ -25,4 +25,4 @@
 // "orderDetail hasFixedFooter {{dataInfo.status == 2?'mulBtns':''}}"
 // "{{type}}   {{disabled?'disabled':''}}"
 
-// 策略：除了双括号表达式外，其余字符用\"包起来，并用+相接
+// 策略：除了双括号表达式外，其余字符用\'包起来，并用+相接

@@ -24,14 +24,11 @@
   >
     {{eleIndex}}:{{ele}}
   </view>
-
 </view>
 
-<view class='{{dataInfo.status == 2?"mulBtns":""}}'>
-</view>
+<view class='{{dataInfo.status == 2?"mulBtns":""}}'></view>
 
-<view class="{{dataInfo.status == 2?'mulBtns':''}}">
-</view>
+<view class="{{dataInfo.status == 2?'mulBtns':''}}"></view>
 
 <view
   class='orderDetail hasFixedFooter {{dataInfo.status == 2?"mulBtns":""}}'
@@ -41,4 +38,3 @@
 </view>
 
 <button class="{{type}} {{disabled?'disabled':''}}">{{btnText}}</button>
-
